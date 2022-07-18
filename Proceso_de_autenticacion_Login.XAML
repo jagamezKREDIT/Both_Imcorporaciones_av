@@ -1,0 +1,144 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Proceso_de_autenticacion_Login" sap:VirtualizedContainerService.HintSize="905,1513" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="34">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Proceso de autenticacion" sap:VirtualizedContainerService.HintSize="915,1448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Google Chrome" Name="varProcesoWeb" />
+      <Variable x:TypeArguments="x:String" Default="https://seas.kredit.com.co/home/" Name="varSitioWeb" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: https://seas.kredit.com.co/home/" sap:VirtualizedContainerService.HintSize="873,1356" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="092f5410-b89d-46fe-a727-543e051061ed" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="839,1140" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="jagamez" Name="varUsuarioKredit" />
+              <Variable x:TypeArguments="x:String" Default="+123abc" Name="varContraseñaKredit" />
+              <Variable x:TypeArguments="x:String" Name="varSitioAntiguo" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetUrl CurrentUrl="[varSitioAntiguo]" DelayBefore="5" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="797,86" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V1" />
+            <If Condition="[String.Equals(varSitioWeb.ToString, varSitioAntiguo.ToString)]" sap:VirtualizedContainerService.HintSize="797,921" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,762" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir 'USUARIO'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="092f5410-b89d-46fe-a727-543e051061ed" Text="[varUsuarioKredit]" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://seas.kredit.com.co/home/index.php" DesignTimeRectangle="639, 365, 152, 30" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="9aa48104-751e-49fa-9646-d3d393d0d599" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJwAAAAiCAYAAACqeLBIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHrSURBVHhe7ZvZisIwGEZ9/6dzQRH1Rr2w7hsuBTHDF4yTTpeRaRMYOAc+KZo/1npMG0lbq9XKhMxutzPH4/HPUf3hcDD7/f7XvvR60T4o2+22sMZls9kU1pF81uu1/T6KjqOiY1nWJphwesM6svmSSRZtV33IOrJV1ZJsqmTTd+Z+uGXHvFQ4dXq9Xs3j8TAAnyBX5IzckXwfC6cigDqkafqZcGoI0ARyyR/ptJ0RjpENmuZ8PttrZEXXf2/hdN4FCMFsNjPL5dJ69haO0Q1CoRnrZDKx0rX0oDAbhVDc73fT7XbNfD7/Fg4gFM/n0wo3Ho8RDuLQ6XTMYDBAOIiDhOv1eggHcZBwOq0iHEQB4SAqCAdRQTiICsJBVBAOooJwEBWEg6ggHEQF4SAqCAdRQTiIhpYn5YRjASaEQgswc8KxxBxCoZujJVxmeZLuqgEIgVb6Sji7ADNJEuNyuVxeTQCaQaNbu922wo1Go6xwyu12ezUFqMfpdLKyOeF0u2BOuMViYe+QBqiDG9n80U1u5YRz0k2nU1ukGYamtQBVyBG5Imd0zebLNhwOrVNyq1A4RQ1kpQpcXCfkf0V/R2iG6EfPFbVtIr4zbmRzXpUKp6ihzrsq6vf7dif9zgj5GTkiV+SM3PFlS5LEfAHUI23VM89dYgAAAABJRU5ErkJggg==" InformativeScreenshot="09813497907e62dd16c742f05defcf1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://seas.kredit.com.co/home/index.php' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir 'Contraseña'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="092f5410-b89d-46fe-a727-543e051061ed" Text="[varContraseñaKredit]" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://seas.kredit.com.co/home/index.php" DesignTimeRectangle="639, 405, 152, 30" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='' aaname='' /&gt;" Guid="684ed417-8dce-44ec-9948-8588895fa028" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJwAAAAiCAYAAACqeLBIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7ZzpasJAFEZ9/5dzxfWHC7gE3BDcUJzyDU5qmrG2ai60nAMfYsxkkszhxsAkpdls5gixCsIR09wVbrFYuN1u587nswP4CXJFzsidmFNKVDg1AniF7Xab80rJCXc8Hq9NAF5jv9+76XSa8SsjHJUN3s16vc5Ilwqn6y5AEQyHw1S6VDiqGxTFfD533W7XS5cKx90oFMXhcHDVatWNRqNP4QCK4nK5eOFU5UoqcwpAkVQqFddoNBAObCiXy77KIRyYIOFU5RAOTEA4MAXhwBSEA1MQDkxBODAF4cAUhANTEA5MQTgwBeHAFIQDMzQ9KSfc6XS6/gzwXjQBMyecHusCKAJNMZdwmelJWghQBJrpq+qWmYBJlYMiCNVNwnU6naxwih5eBXgHm83GyxYup3pcsDSZTNxtxuOxW61W1yYAzyGHms2mF03Ctdtt71ZOuCBdv9/35VB3GLqtBfgOOaLXhEi0wWDgWq2Wj6QLssmtqHCKVtCKuvaGsviTyGh1Ejp8NbVaLdqPoj+hsTbPRPv822P9y3k0RrHzobHVeISqFaL1YtuTP7qMhrcpyau7wimSTraqYb1efzgg2pnQ0Tuibd0TLhxkrN2zkcCxvv5bHo2TzuutVFr/67nWdy0PToRCo996vZ4XLUkSt1wufdXTZ5Ik7gPGQGCj+QjIzgAAAABJRU5ErkJggg==" InformativeScreenshot="c3bcb5334c955f369926688e2df72504.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://seas.kredit.com.co/home/index.php' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'INGRESAR'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="092f5410-b89d-46fe-a727-543e051061ed" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://seas.kredit.com.co/home/index.php" DesignTimeRectangle="639, 457, 89, 24" ElementType="Button" FriendlyName="'INGRESAR'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='button' class='' aaname='INGRESAR' check:text='INGRESAR' /&gt;" Guid="7edc94d1-d68a-4e66-b2a7-1196906c9f79" ImageBase64="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" InformativeScreenshot="5ac62931b66959b12c1065e5465fef4b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://seas.kredit.com.co/home/index.php' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,200" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Ya tiene sesion iniciada&quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="48e3ddd635791d34f5ad252410735065.png" Selector="&lt;html app='chrome.exe' title='https://seas.kredit.com.co/home/' /&gt;" Url="[varSitioWeb]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
