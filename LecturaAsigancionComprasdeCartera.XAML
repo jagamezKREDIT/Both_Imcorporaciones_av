@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="LecturaAsigancionComprasdeCartera" sap:VirtualizedContainerService.HintSize="1213,4239" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:be="clr-namespace:BalaReva.Externals;assembly=BalaReva.Externals" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="LecturaAsigancionComprasdeCartera" sap:VirtualizedContainerService.HintSize="1213,4240" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:be="clr-namespace:BalaReva.Externals;assembly=BalaReva.Externals" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -52,7 +52,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="41">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -101,7 +101,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Lectura Asigancion Compras de Cartera" sap:VirtualizedContainerService.HintSize="1223,4174" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Lectura Asigancion Compras de Cartera" sap:VirtualizedContainerService.HintSize="1223,4175" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="https://seas.kredit.com.co/home/indicadores.php" Name="varSitioHome" />
     </Sequence.Variables>
@@ -110,13 +110,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: https://seas.kredit.com.co/home/" sap:VirtualizedContainerService.HintSize="1181,4082" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="092f5410-b89d-46fe-a727-543e051061ed" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: https://seas.kredit.com.co/home/" sap:VirtualizedContainerService.HintSize="1181,4083" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="092f5410-b89d-46fe-a727-543e051061ed" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1147,3866" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1147,3867" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="jovelez" Name="varUsuarioKredit" />
               <Variable x:TypeArguments="x:String" Default="+123abc" Name="varContraseñaKredit" />
@@ -135,7 +135,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1105,3576" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1105,3577" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Variables>
                 <Variable x:TypeArguments="x:String" Default="zjulian1208@gmail.com" Name="varCorreo" />
                 <Variable x:TypeArguments="x:String" Default="Zjulian21_" Name="varContrasena" />
@@ -210,6 +210,8 @@
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:String" Name="varCeldaLibranza" />
                                             <Variable x:TypeArguments="x:String" Name="varLibranzaDataTable" />
+                                            <Variable x:TypeArguments="x:String" Name="varPDFDocumentDescarga" />
+                                            <Variable x:TypeArguments="x:String" Name="FolderClientDocument" />
                                           </Sequence.Variables>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -302,13 +304,13 @@
                                                     </uix:TargetAnchorable>
                                                   </uix:NExtractData.Target>
                                                 </uix:NExtractData>
-                                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tbClientes]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1049,2159" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tbClientes]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1049,2359" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                                                   <ui:ForEachRow.Body>
                                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="value" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1015,2044" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1015,2244" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="x:String" Default="[&quot;https://seas.kredit.com.co/home/adjuntos.php?id_simulacion=&quot; + value(0).ToString]" Name="varURLTablaInfo" />
                                                         </Sequence.Variables>
@@ -317,7 +319,7 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <If Condition="[String.IsNullOrEmpty(value(1).ToString)]" sap:VirtualizedContainerService.HintSize="973,1952" sap2010:WorkflowViewState.IdRef="If_2">
+                                                        <If Condition="[String.IsNullOrEmpty(value(1).ToString)]" sap:VirtualizedContainerService.HintSize="973,2152" sap2010:WorkflowViewState.IdRef="If_2">
                                                           <If.Then>
                                                             <Sequence sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                                               <sap:WorkflowViewStateService.ViewState>
@@ -329,7 +331,7 @@
                                                             </Sequence>
                                                           </If.Then>
                                                           <If.Else>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="552,1794" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="552,1994" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                                               <Sequence.Variables>
                                                                 <Variable x:TypeArguments="x:String" Name="varArchivoEncontrado" />
                                                               </Sequence.Variables>
@@ -416,20 +418,20 @@
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                               </ui:CommentOut>
-                                                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: S.E.A.S." sap:VirtualizedContainerService.HintSize="510,1520" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="ba5dd709-5717-4a59-a4a7-81bdeeef9e2d" Version="V2">
+                                                              <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: S.E.A.S." sap:VirtualizedContainerService.HintSize="510,1720" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="ba5dd709-5717-4a59-a4a7-81bdeeef9e2d" Version="V2">
                                                                 <uix:NApplicationCard.Body>
                                                                   <ActivityAction x:TypeArguments="x:Object">
                                                                     <ActivityAction.Argument>
                                                                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                                     </ActivityAction.Argument>
-                                                                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="476,1304" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="476,1497" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                                                       <Sequence.Variables>
                                                                         <Variable x:TypeArguments="sd:DataTable" Name="varTablaAdjuntosClientes" />
                                                                         <Variable x:TypeArguments="x:String" Name="FolderClient" />
                                                                         <Variable x:TypeArguments="sd:DataTable" Name="varTablaAdjuntosClientesFiltrado" />
                                                                         <Variable x:TypeArguments="x:String" Name="varCodigoDIA" />
-                                                                        <Variable x:TypeArguments="x:String" Name="FolderClientDocument" />
                                                                         <Variable x:TypeArguments="x:Int32" Name="contadorArrayRutas" />
+                                                                        <Variable x:TypeArguments="s:String[]" Name="arPDF" />
                                                                       </Sequence.Variables>
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -507,7 +509,7 @@
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                       </ui:FilterDataTable>
-                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="Assign_27">
+                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_27">
                                                                         <Assign.To>
                                                                           <OutArgument x:TypeArguments="x:Int32">[contador2]</OutArgument>
                                                                         </Assign.To>
@@ -515,7 +517,7 @@
                                                                           <InArgument x:TypeArguments="x:Int32">[contador2+1]</InArgument>
                                                                         </Assign.Value>
                                                                       </Assign>
-                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_26">
                                                                         <Assign.To>
                                                                           <OutArgument x:TypeArguments="x:String">[FolderClient]</OutArgument>
                                                                         </Assign.To>
@@ -523,7 +525,7 @@
                                                                           <InArgument x:TypeArguments="x:String">["C:\Users\HP\Documents\CPruebas\Incorporaciones\"+varCedulaDataTable+"-"+varLibranzaDataTable]</InArgument>
                                                                         </Assign.Value>
                                                                       </Assign>
-                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="Assign_37">
+                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_37">
                                                                         <Assign.To>
                                                                           <OutArgument x:TypeArguments="x:String">[FolderClientDocument]</OutArgument>
                                                                         </Assign.To>
@@ -533,7 +535,7 @@
                                                                       </Assign>
                                                                       <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[FolderClient]" />
                                                                       <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[FolderClientDocument]" />
-                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="Assign_46">
+                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_46">
                                                                         <Assign.To>
                                                                           <OutArgument x:TypeArguments="x:Int32">[contadorArrayRutas]</OutArgument>
                                                                         </Assign.To>
@@ -541,7 +543,7 @@
                                                                           <InArgument x:TypeArguments="x:Int32">1</InArgument>
                                                                         </Assign.Value>
                                                                       </Assign>
-                                                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[varTablaAdjuntosClientesFiltrado]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="653,2398" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[varTablaAdjuntosClientesFiltrado]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                                                                         <ui:ForEachRow.Body>
                                                                           <ActivityAction x:TypeArguments="sd:DataRow">
                                                                             <ActivityAction.Argument>
@@ -563,9 +565,6 @@
                                                                               <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="577,2045" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                                                                                 <TryCatch.Try>
                                                                                   <Sequence sap:VirtualizedContainerService.HintSize="539,1818" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                                                                                    <Sequence.Variables>
-                                                                                      <Variable x:TypeArguments="x:String" Name="varPDFDocumentDescarga" />
-                                                                                    </Sequence.Variables>
                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -641,7 +640,7 @@
                                                                                     <ui:Matches BuilderPattern="\.(\w+)\$?" sap:VirtualizedContainerService.HintSize="497,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[varRuta]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Avanzado&quot;,&quot;OperationValue&quot;:&quot;\\.(\\w+)\\$?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\.(\w+)\$?" RegexOption="IgnoreCase, Compiled" Result="[varExtFile]" />
                                                                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[FolderClient+&quot;\&quot;+CType(contador2, String)+&quot;-&quot;+varDescargaArchivo+&quot;.&quot;+varExtFile(4).groups(1).ToString]" />
                                                                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="497,106" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Mensaje &quot;+varRuta]" />
-                                                                                    <If Condition="[String.Equals(varDescargaArchivo, &quot;PLANTILLA&quot;)]" sap:VirtualizedContainerService.HintSize="1005,1092" sap2010:WorkflowViewState.IdRef="If_3">
+                                                                                    <If Condition="[String.Equals(varDescargaArchivo, &quot;PLANTILLA&quot;)]" sap:VirtualizedContainerService.HintSize="497,51" sap2010:WorkflowViewState.IdRef="If_3">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -679,7 +678,7 @@
                                                                                         </Sequence>
                                                                                       </If.Then>
                                                                                       <If.Else>
-                                                                                        <Sequence sap:VirtualizedContainerService.HintSize="480,934" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                                                        <Sequence sap:VirtualizedContainerService.HintSize="480,1226" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -721,6 +720,7 @@
                                                                                               <InArgument x:TypeArguments="x:String">[FolderClientDocument+"\"+CType(contador2, String)+"-"+varDescargaArchivo+"."+varExtFile(4).groups(1).ToString]</InArgument>
                                                                                             </Assign.Value>
                                                                                           </Assign>
+                                                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,106" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info" Message="[&quot;Tengo en varPDFDocumentClient la ruta: &quot;+varPDFDocumentDescarga.ToString]" />
                                                                                           <Assign sap:VirtualizedContainerService.HintSize="438,60" sap2010:WorkflowViewState.IdRef="Assign_50">
                                                                                             <Assign.To>
                                                                                               <OutArgument x:TypeArguments="s:String[]">[arRutasPDF]</OutArgument>
@@ -729,6 +729,7 @@
                                                                                               <InArgument x:TypeArguments="s:String[]">[new string(){}]</InArgument>
                                                                                             </Assign.Value>
                                                                                           </Assign>
+                                                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,106" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info" Message="[&quot;llevo arRutaPDF en: &quot;+arRutasPDF.ToString]" />
                                                                                           <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="CommentOut_10">
                                                                                             <ui:CommentOut.Body>
                                                                                               <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_44">
@@ -739,10 +740,10 @@
                                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                                 <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_48">
                                                                                                   <Assign.To>
-                                                                                                    <OutArgument x:TypeArguments="x:String">[arRutasPDF(contadorArrayRutas)]</OutArgument>
+                                                                                                    <OutArgument x:TypeArguments="s:String[]">[arRutasPDF]</OutArgument>
                                                                                                   </Assign.To>
                                                                                                   <Assign.Value>
-                                                                                                    <InArgument x:TypeArguments="x:String">[varPDFDocumentDescarga.ToString]</InArgument>
+                                                                                                    <InArgument x:TypeArguments="s:String[]">[arRutasPDF.Append(varPDFDocumentDescarga.ToString).ToArray(contadorArrayRutas)]</InArgument>
                                                                                                   </Assign.Value>
                                                                                                 </Assign>
                                                                                               </Sequence>
@@ -805,7 +806,7 @@
                                                                                     </ui:CommentOut>
                                                                                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="497,51" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                                                                                       <ui:CommentOut.Body>
-                                                                                        <Sequence sap:VirtualizedContainerService.HintSize="460,809" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                                                        <Sequence sap:VirtualizedContainerService.HintSize="460,841" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -862,7 +863,7 @@
                                                                                     </ui:CommentOut>
                                                                                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="497,51" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                                                                                       <ui:CommentOut.Body>
-                                                                                        <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="376,143" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                                                        <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1029,6 +1030,15 @@
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                       </ui:ForEachRow>
+                                                                      <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_51">
+                                                                        <Assign.To>
+                                                                          <OutArgument x:TypeArguments="s:String[]">[arPDF]</OutArgument>
+                                                                        </Assign.To>
+                                                                        <Assign.Value>
+                                                                          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(FolderClientDocument, "*.pdf")]</InArgument>
+                                                                        </Assign.Value>
+                                                                      </Assign>
+                                                                      <upap:JoinPDF DisplayName="Join PDF Files" FileList="[arPDF]" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="JoinPDF_2" OutputFileName="[FolderClientDocument+&quot;\unionPDF.pdf&quot;]" />
                                                                     </Sequence>
                                                                   </ActivityAction>
                                                                 </uix:NApplicationCard.Body>
@@ -1363,7 +1373,7 @@
                 </ueab:ExcelProcessScopeX>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1071,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1071,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1374,7 +1384,7 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Debió fallar algo en Leer Excel, deberías revisar el both" DisplayName="Send SMTP Mail Message" Email="[varCorreo]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,151" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[varContrasena]" Port="[varPuerto]" SecureConnection="Auto" Server="[varServer]" Subject="Correo enviado por el Both de Error" To="zjulian1208@gmail.com">
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Debió fallar algo en Leer Excel, deberías revisar el both" DisplayName="Send SMTP Mail Message" Email="[varCorreo]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[varContrasena]" Port="[varPuerto]" SecureConnection="Auto" Server="[varServer]" Subject="Correo enviado por el Both de Error" To="zjulian1208@gmail.com">
                       <ui:SendMail.Files>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                       </ui:SendMail.Files>
